@@ -1,0 +1,16 @@
+<launch>
+  <!-- Define arguments for GPS and IMU ports -->
+  <arg name="gps_port" />
+  <arg name="imu_port" />
+
+  <!-- Include GPS launch file -->
+  <include file="$(find gps_driver)/launch/driver.launch">
+    <arg name="port" value="$(arg gps_port)" />
+  </include>
+
+  <!-- Include IMU launch file -->
+  <include file="$(find imu_driver)/launch/driver.launch">
+    <arg name="port" value="$(arg imu_port)" />
+  </include>
+</launch>
+

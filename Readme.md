@@ -13,10 +13,10 @@ The following has been performed in MATLAB:
 
 ## Run the code
 Launch both GPS and IMU drivers simultaneously through master.launch file using: 
-roslaunch sensor_fusion master.launch gps_port:=<your GPS port> imu_port:=<your IMU port> 
+roslaunch sensor_fusion master.launch gps_port:=<your GPS port> imu_port:=<$your IMU port> 
 
 Each driver can be individualy launched if required using:
-GPS driver: roslaunch gps_driver driver.launch port:=<your GPS port>
-IMU driver: roslaunch imu_driver driver.launch port:=<your IMU port>
+GPS driver: roslaunch gps_driver driver.launch port:=<$your GPS port>
+IMU driver: roslaunch imu_driver driver.launch port:=<$your IMU port>
 
 ## Analysis & Report can be found in /src/analysis folder

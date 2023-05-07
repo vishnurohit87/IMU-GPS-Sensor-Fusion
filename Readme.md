@@ -12,8 +12,9 @@ The following has been performed in MATLAB:
 4. Dead Reckoning with IMU
 
 ## Run the code
-Launch both GPS and IMU drivers simultaneously through master.launch file using: 
-roslaunch sensor_fusion master.launch gps_port:=<your GPS port> imu_port:=<$your IMU port> 
+1. Run catkin_make in the root directory
+2. Launch both GPS and IMU drivers simultaneously through master.launch file using: 
+    roslaunch sensor_fusion master.launch gps_port:=<your GPS port> imu_port:=<$your IMU port> 
 
 Each driver can be individualy launched if required using:
 GPS driver: roslaunch gps_driver driver.launch port:=<$your GPS port>
